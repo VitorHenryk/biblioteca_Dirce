@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biblioteca Dirce - Empréstimo</title>
+    <link rel="stylesheet" href="empréstimo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="main-header-container">
+        <header class="header">
+            <h1>Biblioteca Dirce</h1>
+            <div class="header-elements">
+                <div class="search-bar">
+                    <input type="text" id="pesquisa" placeholder="Pesquisar..." />
+                </div>
+                <div class="login">
+                    <a href="/login/login.html">login/entrar</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html">Menu</a></li>
+                <li><a href="/catálogo/catalogo.html">Catálogo</a></li>
+                <li><a href="/perfil/perfil.html">perfil</a></li>
+                <li><a href="/favoritos/favoritos.html">favoritos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="emprestimo-page">
+            <div class="livro-card">
+                <!-- Lado esquerdo: capa + comentários -->
+                <div class="lado-esquerdo">
+                    <img src="/livros/sol da meia noite.jpg" alt="sol da meia noite" class="livro-img">
+
+                    <div class="lado-esquerdo-inferior">
+                        <div class="botoes-container">
+                            <button class="btn-avaliação">
+                                ⭐ 4.8 / 5
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Lado direito: descrição + botões -->
+                <div class="livro-info">
+                    <h2 class="titulo-livro">Sol da meia noite</h2>
+                    <p class="autor"><strong>Autor:</strong>Stephenie Meyer</p>
+                    <p class="publicacao"><strong>Data de Publicação:</strong>2020</p>
+                    <p class="descricao">
+                        Em Sol da Meia-Noite, a história de Crepúsculo é contada sob a perspectiva de Edward Cullen.
+                        Aqui, o leitor mergulha na mente de um vampiro dividido entre o amor e o instinto, lutando
+                        contra o desejo incontrolável pelo sangue — e pela alma — de Bella Swan.
+                        Enquanto tenta proteger Bella de si mesmo, Edward revela os segredos sombrios de seu mundo e a
+                        profundidade do seu amor impossível.
+                        É uma versão mais sombria, intensa e emocional da história que conquistou uma geração.
+                    </p>
+
+                    <!-- Retângulo marrom com botões -->
+                    <div class="botoes-container">
+                        <button class="btn-emprestar">emprestar</button>
+                        <button class="btn-ler">ler</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>Contato: <a href="mailto:biblioteca.dirce@gmail.com">biblioteca.dirce@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
