@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biblioteca Dirce - Empréstimo</title>
+    <link rel="stylesheet" href="empréstimo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="main-header-container">
+        <header class="header">
+            <h1>Biblioteca Dirce</h1>
+            <div class="header-elements">
+                <div class="search-bar">
+                    <input type="text" id="pesquisa" placeholder="Pesquisar..." />
+                </div>
+                <div class="login">
+                    <a href="/login/login.html">login/entrar</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html">Menu</a></li>
+                <li><a href="/catálogo/catalogo.html">Catálogo</a></li>
+                <li><a href="/perfil/perfil.html">perfil</a></li>
+                <li><a href="/favoritos/favoritos.html">favoritos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="emprestimo-page">
+            <div class="livro-card">
+                <!-- Lado esquerdo: capa + comentários -->
+                <div class="lado-esquerdo">
+                    <img src="/livros/a metamorfose.jpg" alt="metamorfose" class="livro-img">
+
+                    <div class="lado-esquerdo-inferior">
+                        <div class="botoes-container">
+                            <button class="btn-avaliação">
+                                ⭐ 4.7 / 5
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Lado direito: descrição + botões -->
+                <div class="livro-info">
+                    <h2 class="titulo-livro">A Metamorfose</h2>
+                    <p class="autor"><strong>Autor:</strong>Franz Kafka</p>
+                    <p class="publicacao"><strong>Data de Publicação:</strong>1915</p>
+                    <p class="descricao">
+                        "A Metamorfose" é uma das obras mais marcantes do século XX e um dos pilares do existencialismo
+                        literário. A trama começa quando Gregor Samsa, um simples caixeiro-viajante, acorda um dia
+                        transformado em um inseto gigante. A partir daí, Kafka constrói uma alegoria angustiante sobre
+                        alienação, rejeição e desumanização. O livro questiona o valor do indivíduo em uma sociedade
+                        fria e utilitarista, além de provocar reflexões sobre identidade e solidão.
+                    </p>
+
+                    <!-- Retângulo marrom com botões -->
+                    <div class="botoes-container">
+                        <button class="btn-emprestar">emprestar</button>
+                        <button class="btn-ler">ler</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de empréstimo -->
+        <div class="modal-emprestimo">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h2>Coraline</h2>
+                <p><strong>Autor:</strong> Neil Gaiman</p>
+                <p><strong>Data de publicação:</strong> 2 de julho de 2002</p>
+                <p><strong>Descrição:</strong> Coraline é uma novela fantástica de terror do autor britânico Neil
+                    Gaiman.</p>
+                <p><strong>Data de empréstimo:</strong> 21/10/2025</p>
+                <p><strong>Data de devolução:</strong> 28/10/2025</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>Contato: <a href="mailto:biblioteca.dirce@gmail.com">biblioteca.dirce@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
